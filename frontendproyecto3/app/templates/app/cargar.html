@@ -1,0 +1,21 @@
+{% extends 'app/base.html' %}
+{% block contenido %}
+ <div id="padre">
+
+        <form  method="POST" enctype="multipart/form-data">{% csrf_token %}
+
+
+            <div class="A3" >
+             <input type="file"  name="archivo" id="file">
+             <input class="boton_personalizado" type="submit" value="Enviasr">
+        </div>
+        </form>
+
+        <div class="B3">
+            <input class="btn_warnign" type="button" value="Reset">
+        </div>
+
+
+ </div>
+
+{% endblock %}
