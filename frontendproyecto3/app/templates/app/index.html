@@ -1,0 +1,63 @@
+{% extends 'app/base.html' %}
+
+{% block contenido %}
+<div class="container">
+
+
+
+ <div id="padre">
+
+        <form  method="POST" enctype="multipart/form-data" >{% csrf_token %}
+            <input  class="subirArchivo" type="file"  name="archivo" id="file">
+
+            <div class="A3" >
+             
+             <input class="boton_personalizado" type="submit" value="Enviar">
+        </div>
+        </form>
+
+        <div class="B3">
+            <input class="btn_warnign" type="button" value="Reset">
+        </div>
+
+
+ </div>
+
+
+<div id="padre">
+
+            <div class="A2">
+                <label><b>Entrada:</b></label>
+            </div>
+
+            <div class="B2">
+
+                <label><b>Salida:</b></label>
+
+            </div>
+
+       </div>
+
+
+
+
+       <div id="padre" >
+
+
+
+           <div class="A">
+               <textarea class="textareas" id="contenido" name="entrada"  rows="10" cols="40" >uuuu</textarea>
+           </div>
+           <div class="B">
+               <textarea  class="textareas" id="salida" rows="10" cols="40" ></textarea>
+           </div>
+
+
+       </div>
+
+
+
+
+</div>
+
+{% endblock %}

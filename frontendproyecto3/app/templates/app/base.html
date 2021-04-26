@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    {% load static %}
+	<link rel="stylesheet"  href="{%  static 'app/css/estilo.css' %} ">
+    <script src="{%  static 'app/js/script.js' %}"></script>
+	<title>IPC2 SECCION A</title>
+
+
+</head>
+
+{% load static %}
+<body>
+<header class="header">
+    <div class="container logo-nav-container">
+        <a href="/" class="logo">IPC2</a>
+        <nav class="navigation">
+            <ul>
+                <li><a href="/cargar">Cargar</a></li>
+                <li>
+                    <a href="#">Peticiones</a>
+                    <ul>
+                        <li><a href="#">ConsultarDatos</a></li>
+                        <li><a href="#">Filtrar Por Fecha y Usuario</a></li>
+                        <li><a href="facebook.com">Filtrar por Fecha y Codigo </a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Ayuda</a></li>
+
+
+
+            </ul>
+
+        </nav>
+
+    </div>
+    <marquee >PROYECTO III</marquee>
+
+
+
+
+
+
+
+
+</header>
+
+<main class="main">
+    {% block contenido %}
+    {% endblock %}
+
+</main>
+
+
+<footer class="futer">
+    <b><i>id y enseñad a todos</i></b>
+
+</footer>
+
+
+
+</body>
+</html>
