@@ -1,0 +1,14 @@
+<Fallas>
+	<tipoFalla>
+		<idTipoFalla type="integer"></idTipoFalla>
+		<descipcion type="string"></descipcion>
+		<abreviatura type="string"></abreviatura>
+
+	</tipoFalla>
+	<tipoFallaReportada>
+		<idFalla type="integer"></idFalla>
+		<fechaReportaFalla type="date"></fechaReportaFalla>
+		<descipcionFalla type="string"></descipcionFalla>
+		<comentario type="string">
+	</tipoFallaReportada>
+</Fallas>

@@ -1,0 +1,40 @@
+<TELEFONOS>
+	<TELEFONO>
+		<tipoMarca>
+			<idMarca type="integer"></idMarca>
+			<nombre type="string"></nombre>
+		</tipoMarca>
+		<tipoModelo>
+			<idModelo type="integer"></idModelo>
+			<nombre type="string"></nombre>
+			<marca type="typoMarca"></marca>
+		</tipoModelo>
+		<tipoTelefono>
+			<idTelefono type="integer"></idTelefono>
+			<numeroserie type="string"></numerosere>
+			<fechaAdquisicion type="date"></fechaAdquisicion>
+			<numeroFactura type="string"></numeroFactura>
+			<modelo type="tipoModelo"></modelo>
+		</tipoTelefono>
+		<tipoTelefono>
+			
+		</tipoTelefono>
+	</TELEFONO>
+
+</TELEFONOS>
+*/*/*/*/*/solucion/*/*/*/*/*/*//*
+<TELEFONO >
+	<idTelefono>2</idTelefono>
+	<numeroserie>33AM</numeroserie>
+	<fechaAdquisicion>01/03/2021</fechaAdquisicion>
+	<numeroFactura>8889</numeroFactura>
+	<modelo>
+		<idModelo>5</idModelo>
+		<nombre>57</nombre>
+		<marca>
+			<idMarca>05</idMarca>
+			<nombre>samsung</nombre>
+		</marca>
+	</modelo>
+	
+</TELEFONO>
