@@ -9,6 +9,7 @@ def index(request):
         #entrada= request.POST.get('contenido')
         archivo=request.FILES['archivo']
         file=str(archivo.read())
+        print(file)
         fichero = {'archivo':file}
         response = requests.post('http://127.0.0.1:5000/subir',json=fichero)
 

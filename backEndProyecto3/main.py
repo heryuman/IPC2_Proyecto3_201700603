@@ -1,5 +1,5 @@
 from flask import Flask,jsonify,request
-from operaciones.lector import reader
+from operaciones.crearEventos import createEvents
 
 import os
 app=Flask(__name__)
@@ -20,10 +20,10 @@ def subir():
     if request.method== 'POST':
         requestData=request.get_json()
         content=requestData['archivo']
-        #print(content)
-        nlector= reader(str(content))
-        nlector.lector()
+        nArchivo=createEvents(content)
+      
 
+        
         return jsonify({'message': 'received'})
 
 
